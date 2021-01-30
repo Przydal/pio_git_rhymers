@@ -4,6 +4,7 @@ public class DefaultCountingOutRhymer {
 
 	private static final int TABLE_SIZE = 12;
 	private static final int TOTAL_NUMBER = -1;
+	private static final int NEGATIVE_VALUE = -1;
 	private static final int FULL_NUMBER = 11;
 	private final int[] numbers = new int[TABLE_SIZE];
 	private int total = TOTAL_NUMBER;
@@ -23,13 +24,13 @@ public class DefaultCountingOutRhymer {
 
 	protected int peekaboo() {
 		if (callCheck())
-			return TOTAL_NUMBER;
+			return NEGATIVE_VALUE;
 		return numbers[total];
 	}
 
 	public int countOut() {
 		if (callCheck())
-			return TOTAL_NUMBER;
+			return NEGATIVE_VALUE;
 		return numbers[total--];
 	}
 

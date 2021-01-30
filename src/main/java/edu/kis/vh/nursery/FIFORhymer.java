@@ -15,6 +15,3 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 		return ret;
 	}
 }
-
-//Kombinacja klawiszy alt + <- powrót kursora do poprzedniege miejsca
-//Kombinacja klawiszy alt + -> skok kursora do miejsca z ktorego powrocono 
